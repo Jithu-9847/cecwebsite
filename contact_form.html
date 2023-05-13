@@ -1,0 +1,315 @@
+<html>
+    <head>
+        <title>
+            contact form
+        </title>
+
+        <style>
+            body{
+
+                scroll-behavior: smooth;
+                height: 150%;
+            }
+            #head{
+                position:  absolute;
+                font-size:80px;
+                top:0%;
+                left: 30%;
+                transform: translateX(-50%);
+                font-weight: bolder;
+                box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+                background: white;
+
+            }
+
+            #name_t{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 22%;
+                top: 34%;
+
+            }
+            #mail_t{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 22%;
+                top: 44%;
+
+            }
+            #num_t{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 22%;
+                top: 54%;
+
+            }
+            input{
+
+                position: absolute;
+                top: 36%;
+                left: 40%;
+                height: 35px;
+                width: 200px;
+                border: 4px groove black;
+                outline-style: none;
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            #mail{
+
+                
+                top: 45%;
+            }
+
+            
+            #num{
+
+                
+                top: 55%;
+            }
+            #form{
+                position: absolute;
+                width: 60%;
+                height: 100%;
+             background: rgb(6, 150, 233);
+             left: 20%;
+              
+             top: 20%;
+            }
+
+            #first_second_name{
+
+                 display: none;
+            }
+             
+
+            
+            #sec_name{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 40%;
+                top: 45%;
+
+            }
+            #fir{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 32%;
+                top: 34%;
+
+            }
+            #sec{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 32%;
+                top: 44%;
+            }
+
+            #info{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 22%;
+                top: 64%;
+
+            }
+            textarea{
+
+                position: absolute;
+                top: 70%;
+                left: 22%;
+                outline-style: none;
+                border: 3px solid grey;
+                height: 200px;
+                width: 475px;
+                font-weight: bold;
+                font-family: Verdana;
+            }
+
+            #clear{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 32%;
+                top: 110%;
+                border: 3px solid rgb(255, 255, 255);
+                background:  rgb(6, 150, 233) ;
+            }
+            #submit{
+                position: absolute;
+                font-size: large;
+                font-weight: bold;
+                left: 55%;
+                top: 110%;
+                border: 3px solid rgb(255, 255, 255);
+                background:   rgb(6, 150, 233);
+            }
+
+            #phone{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: aqua;
+                 left: 75%;
+                 top: 10%;
+                 box-shadow: 2px 2px 5px 6px rgb(130, 126, 126);
+                 border-radius: 3px;
+            }
+            #phone p{
+                font-size: 20px;
+                margin-left: 45px;
+                margin-top: 30px;
+            }
+            #phone img{
+                margin-left: 45px;
+                margin-top: 10px;
+            }
+            #email{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: aqua;
+                 left: 75%;
+                 top: 40%;
+                 box-shadow: 2px 2px 5px 6px rgb(130, 126, 126);
+                 border-radius: 3px;
+            }
+            #email p{
+                font-size: 20px;
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+            #email img{
+                margin-left: 45px;
+                margin-top: 10px;
+            }
+            #home{
+                font-size: 30px;
+                font-weight: bold;
+                 width: 75px;
+                 border: 3px solid black;
+                 cursor: pointer;
+
+            }
+
+
+
+            
+            
+
+ 
+        </style>
+        
+
+
+
+        </head>
+        <body>
+            <form>
+                 
+                
+                    <div id="form"></div>
+                    <p id="head">CONTACT FORM</p>
+                    <p id="name_t">NAME</p>
+                    <p id="mail_t">Email</p>
+                    <p id="num_t">MOBILE NO</p>
+                    <input type="text" nameholder="hello" id="name">
+                    <input type="text" nameholder="hello" id="mail">
+                    <input type="text" nameholder="hello" id="num">
+
+                    <div id="first_second_name">
+                        <p id="fir">First Name:</p>
+                        <p id="sec">Last Name:</p>
+                        <input type="text" nameholder="hello" id="fir_name">
+
+                    <input type="text" nameholder="hello" id="sec_name">
+                    </div>
+
+                    <p id="info">The information that you to share with us</p>
+                      <textarea name="enter"   cols="30" rows="10" id="text"  ></textarea>
+                      <input type="reset" id="clear">
+                       
+                      
+                      <input type="submit" id="submit" >
+                       
+                        <div id="phone">
+                            <img src="" alt="" width="50px" height="50px">
+                             <p>Tele-Phone</p>
+                             <p>04** *******</p>
+                        </div>
+                        <div id="email">
+                            <img src="" alt="" width="50px" height="50px">
+                             <p>Email</p>
+                             <p>******@gmail.com</p>
+                        </div>
+                 
+            </form>
+            
+             
+
+
+            <script>
+                document.getElementById("name").addEventListener("click",function(){
+                    document.getElementById("name").style.display="none";
+                    document.getElementById("first_second_name").style.display="block";
+                    document.getElementById("mail").style.top="55%";
+                    document.getElementById("mail_t").style.top="54%";
+                    document.getElementById("num_t").style.top="64%";
+                    document.getElementById("num").style.top="65%";
+                    document.getElementById("info").style.top="73%";
+                    document.getElementById("text").style.top="80%";
+
+
+                });
+
+                function check(){
+
+                if(document.getElementById("num").value=="" || document.getElementById("mail").value=="" || document.getElementById("fir_name").value=="" || document.getElementById("sec_name").value=="" || document.getElementById("text").value=="")
+                {
+                document.getElementById("submit").style.display="none";
+                
+                }
+                else
+                document.getElementById("submit").style.display="block";
+
+               
+                }
+
+                document.getElementById("text").addEventListener("click",function(){
+                    if(isNaN(document.getElementById("num").value ))
+                   {alert("Enter a valid number!");
+                   document.getElementById("submit").style.display="none";
+            }
+
+
+                });
+             
+                setInterval(function(){
+
+                    check();
+                },1000);
+
+                 
+                document.getElementById("submit").addEventListener("click",function(){
+                    location.replace("test.html");
+                     
+
+                });
+                document.getElementById("home").addEventListener("click",function(){
+                    location.replace("home.html");
+                     
+
+                });
+                 
+ 
+            </script>
+        </body>
+    
+</html>
